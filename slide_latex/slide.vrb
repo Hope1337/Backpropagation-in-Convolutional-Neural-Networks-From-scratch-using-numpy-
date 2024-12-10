@@ -1,0 +1,35 @@
+\frametitle{Model}
+    	\justifying
+    	Based on the above theory, I built a model using Conv2D, ReLU, Softmax, and the Cross Entropy loss function entirely with NumPy (not using PyTorch's autograd in the model, only for the purpose of checking consistency of results) and manually computed derivatives. The code is attached in the document. The model consists of 6 Conv layers:
+\begin{multicols}{2}
+	\small
+	\begin{lstlisting}[language=Python]
+		def __init__(self, input_dim, eta=1e-4):
+		self.input_dim = input_dim
+		self.eta = eta
+		
+		self.conv1    = Conv2D(1, 16, 3)
+		self.padding1 = Padding(1)
+	\end{lstlisting}
+	\begin{lstlisting}[language=Python]
+		self.relu1    = ReLU()
+		
+		self.conv2    = Conv2D(16, 32, 3)
+		self.padding2 = Padding(1)
+		self.relu2    = ReLU()
+		self.maxpool  = MaxPool(2)
+		
+		self.conv3    = Conv2D(32, 64, 3)
+		self.relu3    = ReLU()
+	\end{lstlisting}
+	\begin{lstlisting}[language=Python]
+		self.conv4    = Conv2D(64, 64, 3)
+		self.relu4    = ReLU()
+		
+		self.flatten  = Flatten()
+		
+		self.conv5    = Conv2D(64*10*10, 10, 1)
+		
+		self.loss  = Loss()
+	\end{lstlisting}
+\end{multicols}

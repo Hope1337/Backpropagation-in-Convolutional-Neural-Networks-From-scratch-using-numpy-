@@ -1,0 +1,14 @@
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Theory}{8}{0}{2}
+\beamer@subsectionintoc {2}{1}{Convolution}{9}{0}{2}
+\beamer@subsectionintoc {2}{2}{Backpropagation}{14}{0}{2}
+\beamer@subsectionintoc {2}{3}{Derivative of Weight}{18}{0}{2}
+\beamer@subsectionintoc {2}{4}{Derivative of Bias}{24}{0}{2}
+\beamer@subsectionintoc {2}{5}{Derivative of Input}{27}{0}{2}
+\beamer@subsectionintoc {2}{6}{Derivative of Padding}{31}{0}{2}
+\beamer@subsectionintoc {2}{7}{Derivative of MaxPool}{34}{0}{2}
+\beamer@subsectionintoc {2}{8}{Derivative of ReLU}{37}{0}{2}
+\beamer@subsectionintoc {2}{9}{Derivative of Cross Entropy}{39}{0}{2}
+\beamer@sectionintoc {3}{Experiment}{44}{0}{3}
+\beamer@subsectionintoc {3}{1}{Setting}{45}{0}{3}
+\beamer@subsectionintoc {3}{2}{Kết quả trực quan}{48}{0}{3}
